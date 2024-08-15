@@ -1,0 +1,5 @@
+export enum AppName {
+  ACC_PROCESSING = 'ACC_PROCESSING',
+  ACC_SYNCING = 'ACC_SYNCING',
+  GDOS_API = 'GDOS_API',
+}

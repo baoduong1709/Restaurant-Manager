@@ -1,0 +1,322 @@
+/* CSS cho container */
+.food-selection {
+  position: relative;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+.cart-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.modal-content {
+  position: relative;
+  bottom: 0;
+  padding: 0px;
+  margin-top: 100px;
+  padding-bottom: 1000px;
+  width: 100%;
+  height: 80%;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 3000;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.cart-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  max-width: 500px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn p {
+  margin: 0;
+  text-align: center;
+}
+
+.cart-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.cart-btn p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cart-btn .total-quantity {
+  font-weight: bold;
+}
+
+.cart-btn .total-amount {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.send-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #218838;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  padding: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-header {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  padding: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart{
+  padding: 10px;
+}
+
+.food-selection .food-list {
+  margin-top: 120px; 
+}
+
+.search-input {
+  font-size: 16px;
+  width: calc(100% - 40px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.food-selection .food-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.food-selection .food-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.modal-content li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.food-selection .food-list .food-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.modal-content .food-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.food-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-info .name {
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 110px;
+}
+
+.food-info .price {
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+  position: absolute;
+  bottom: 0px;
+  left: 110px;
+}
+
+.add-btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.remove-btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  right: 70px;
+}
+
+.quantity {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 21px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 7px;
+  right: 45px;
+}
+
+.pay-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Thêm CSS cho category menu */
+.category-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.category-btn {
+  width: 25%;
+  border: none;
+  height: 40px;
+  color: black;
+  background-color: #ffffff;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.3s;
+}
+
+.category-btn.active {
+  border-bottom: 2px solid red;
+  color: red;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.category-section ul{
+  margin-top: -10px;
+}
+
