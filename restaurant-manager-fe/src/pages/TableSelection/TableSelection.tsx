@@ -17,7 +17,7 @@ const TableSelection: React.FC = () => {
   const navigate = useNavigate();
   const [selectedTable, setSelectedTable] = useState<Table | null>(null);
   const [tables, setTables] = useState<Table[]>([]);
-
+  console.log(port);
   useEffect(() => {
     const fetchTables = async () => {
       try {
@@ -82,7 +82,7 @@ const TableSelection: React.FC = () => {
 
   return (
     <div className='table-selection'>
-      <h2>Chọn bàn</h2>
+      <h2>Chọn bàng</h2>
       <div className='table-grid'>{renderTables()}</div>
       <div className={`button-container ${selectedTable ? "" : "hidden"}`}>
         <button onClick={handleNextClick}>Tiếp theo</button>
