@@ -10,9 +10,7 @@ export class UserService {
   constructor(
     @Inject(MODELS.USER_MODEL) private userModel: Model<UserDocument>,
   ) {}
-  create(username: string, password: string, permission: string) {
-    
-  }
+  create(createUserDto: CreateUserDto) {}
 
   findAll() {
     return `This action returns all user`;
