@@ -17,13 +17,14 @@ const TableSelection: React.FC = () => {
   const navigate = useNavigate();
   const [selectedTable, setSelectedTable] = useState<Table | null>(null);
   const [tables, setTables] = useState<Table[]>([]);
-  console.log(port);
+  console.log(`http://${host}:${port}/table`);
   useEffect(() => {
     const fetchTables = async () => {
       try {
         const response = await axios.get<{ data: Table[] }>(
           `http://${host}:${port}/table`
         );
+        console.log(`http://${host}:${port}/table`);
         console.log(response.data.data);
         setTables(response.data.data);
       } catch (error) {

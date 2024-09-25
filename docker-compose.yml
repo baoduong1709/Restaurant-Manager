@@ -1,0 +1,17 @@
+version: '3'
+services:
+  be:
+    build: ./restaurant-manager-be
+    volumes: 
+      - ./restaurant-manager-be:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "5000:5000"
+  
+  fe:
+    build: ./restaurant-manager-fe
+    volumes:
+      - ./restaurant-manager-fe:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"

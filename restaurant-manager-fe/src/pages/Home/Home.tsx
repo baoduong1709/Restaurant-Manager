@@ -1,18 +1,17 @@
-// src/pages/Home/Home.tsx
-
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link để điều hướng
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link để điều hướng
 
 const Home: React.FC = () => {
   return (
-    <div className="home">
-      <h1>Chào mừng đến với Quán Ăn XYZ!</h1>
-      <p>Chúng tôi có những món ngon nhất dành cho bạn.</p>
-      <Link to="/table">
-        <button>Khám phá thực đơn</button>
+    <div className='home' style={{ textAlign: "center", padding: "50px" }}>
+      <h1>Quán Ăn XYZ</h1>
+      <Link to='/table'>
+        <button style={{ padding: "10px 20px", fontSize: "16px" }}>
+          Thực Đơn
+        </button>
       </Link>
     </div>
   );
-}
+};
 
 export default Home;

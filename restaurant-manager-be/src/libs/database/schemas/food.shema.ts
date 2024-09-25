@@ -15,6 +15,9 @@ export class Food extends Document {
   @Prop({ required: true })
   foodName: string;
 
+  @Prop()
+  description: string;
+
   @Prop({ required: true })
   price: number;
 

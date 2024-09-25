@@ -7,12 +7,14 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { BullModule } from '@nestjs/bull';
 import { ScheduleModule } from '@nestjs/schedule';
 import { CloudinaryModule } from './libs/cloudinary/cloudinary.module';
+import { RedisModule } from './modules/redis/redis.module';
 
 @Module({
   imports: [
     CoreModule,
     FoodModule,
     TableModule,
+    RedisModule,
     Lau39DatabaseModule,
     ScheduleModule.forRoot(),
     ConfigModule.forRoot({

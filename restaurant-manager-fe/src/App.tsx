@@ -5,12 +5,12 @@ import TableSelection from "./pages/TableSelection/TableSelection";
 import FoodSelection from "./pages/FoodSelection/FoodSelection";
 import Modal from "react-modal";
 import BillDetail from "./pages/BillDetail/BillDetail";
-import BillManagement from "./pages/BillManagement/BillManagement";
+import BillManagement from "./pages/Managements/BillManagement/BillManagement";
 import Login from "./pages/Login/Login";
-import RestaurantManagement from "./pages/RestaurantManagement/RestaurantManagement";
-import EmployeeManagement from "./pages/EmployeeManagement/EmployeeManagement";
-import TableManagement from "./pages/TableManagement/TableManagement";
-import FoodManagement from "./pages/FoodManagement/FoodManagement";
+import RestaurantManagement from "./pages/Managements/RestaurantManagement/RestaurantManagement";
+import EmployeeManagement from "./pages/Managements/EmployeeManagement/EmployeeManagement";
+import TableManagement from "./pages/Managements/TableManagement/TableManagement";
+import FoodManagement from "./pages/Managements/FoodManagement/FoodManagement";
 
 Modal.setAppElement("#root");
 
